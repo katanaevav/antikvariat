@@ -1,0 +1,120 @@
+.services {
+    margin-top: 50px;
+    color: @dark;
+    color: @light;
+  }
+  
+  .services-header {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+  
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  
+  .services-text {
+    padding-top: 20px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    color: @dark;
+  
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  
+  .services-text__center {
+    text-align: center;
+  }
+
+
+.service-list {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-item {
+  height: 450px;
+  width: 270px;
+  position: static;
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 60px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+
+  box-shadow:  5px 6px 10px 3px rgba(0, 0, 0, .23);
+}
+
+.service-item .item-header {
+  display: inline;
+  position: relative;
+  color: @white;
+  font-size: 18px;
+  background-color: @light;
+  border-radius: 10px;
+  padding: 10px 20px;
+
+  top: 20px;
+  left: -15px
+}
+
+.service-item .item-text {
+  height: 180px;
+  padding: 15px;
+  margin-top: auto;
+  color: @dark;
+  background-color: @white;
+
+}
+
+
+.service-item:nth-child(1) {
+  background-image: url("../img/pic1_mobile.png");
+}
+
+.service-item:nth-child(2) {
+  background-image: url("../img/pic2_mobile.png");
+}
+
+.service-item:nth-child(3) {
+  background-image: url("../img/pic4_mobile.png");
+}
+
+  @media (min-width: @desktop-width) {
+    .services-header {
+      font-size: 42px;
+      line-height: 48px;
+    }
+  
+    .services-text {
+      font-size: 22px;
+      line-height: 32px;
+    }
+
+    .service-list {
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+
+    .service-item:nth-child(1) {
+      background-image: url("../img/pic1_desktop.png");
+    }
+    
+    .service-item:nth-child(2) {
+      background-image: url("../img/pic2_desktop.png");
+    }
+    
+    .service-item:nth-child(3) {
+      background-image: url("../img/pic4_desktop.png");
+    }
+  }

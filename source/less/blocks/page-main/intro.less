@@ -1,0 +1,66 @@
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    height: calc(100vh - 68px);
+    background-image: url("../img/picstorage_mobile.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+
+    .intro-text {
+      font-family: "HistoryPro", "Arial", sans-serif;
+      color: @white;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 35px;
+      line-height: 58px;
+      //text-shadow: 2px 2px @dark;
+      text-shadow: 1px 1px 0px @white, -1px -1px 0px @white, -2px -3px 3px @dark, 0 0 1em @light;
+      backdrop-filter: blur(2px);
+    }
+
+ 
+    @media (min-width: @desktop-width) {
+
+        background-image: url("../img/picstorage_desktop.png");
+        height: calc(100vh - 61px);
+
+      
+      .intro-text {
+        font-size: 78px;
+        line-height: 118px;
+      }
+    }
+
+}
+
+
+.intro-buttons {
+  padding-top: 50px;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  a {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+
+    a {
+      width: 300px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+}

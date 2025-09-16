@@ -1,0 +1,30 @@
+.page-header__wrapper {
+    // width: @desktop-width;
+     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  
+  //  padding-left: 20px;
+  // padding-right: 20px;
+  
+    box-shadow: 0 2px 7px rgba(0,0,0,0.23);
+  
+    display: flex;
+    flex-direction: row;
+    //justify-content: space-between;
+    justify-content: flex-end;
+  
+    a {
+      font-size: 22px;
+      line-height: 17px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    .page-header__wrapper {
+       width: @desktop-width;
+     }
+  }
+
+
+  @import "./main-menu.less";

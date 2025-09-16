@@ -1,0 +1,20 @@
+.page-header {
+    background-color: @dark;
+    box-shadow: none;
+    width: 100%;
+  }
+
+.page-header a {
+    color: @white;
+  }
+  
+@import "./page-header-wrapper.less";
+@import "./page-header-modile-menu.less";
+  
+  
+@media (min-width: @desktop-width) {
+  .page-header {
+    box-shadow: 0 2px 7px rgba(0,0,0,0.23);
+  }
+}
+  

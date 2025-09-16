@@ -1,0 +1,42 @@
+.main-menu {
+  display: none;
+  align-items: stretch;
+
+}
+
+.main-menu__item {
+  margin-right: 26px;
+  display: flex;
+  align-items: stretch;
+
+  a {
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    font-size: 20px;
+    line-height: 21px;
+  }
+}
+
+.page-header__mobile-menu-button {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+
+  margin-right: 20px;
+
+  padding: 20px;
+}
+
+@media (min-width: @desktop-width) {
+  .main-menu {
+    display: flex;
+  }
+
+  .page-header__mobile-menu-button {
+    display: none;
+  }
+}

@@ -1,0 +1,45 @@
+.page-main__wrapper {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  
+    display: flex;
+    flex-direction: column;
+}
+
+.link-button {
+  color: @white;
+  background-color: @dark;
+
+  box-shadow: 0px 0px 2px @white;
+
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 48px;
+  text-shadow: 2px 2px @dark;
+
+  padding: 10px 20px;
+
+  &:hover {
+    box-shadow: 0px 0px 20px 4px #fff;
+  }
+}
+
+@media (min-width: @desktop-width) {
+    .page-main__wrapper {
+       width: @desktop-width;
+    }
+
+    .link-button {
+      font-size: 28px;
+      line-height: 58px;
+    }
+  }
+
+@import "./intro.less";
+@import "./about.less";
+@import "./services.less";
+@import "./reviews.less";
+@import "./contacts.less";
