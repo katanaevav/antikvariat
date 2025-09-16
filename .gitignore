@@ -11,5 +11,3 @@ Thumbs.db
 *.log*
 node_modules/
 
-# Файлы сборки
-build/
